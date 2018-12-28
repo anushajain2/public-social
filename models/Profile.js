@@ -42,10 +42,13 @@ const ProfileSchema = new Schema({
       current: {
         type: Boolean,
         default: false
+      },
+      description: {
+        type: String
       }
     }
   ],
-  college: [
+  education: [
     {
       degree: {
         type: String
@@ -66,27 +69,9 @@ const ProfileSchema = new Schema({
       current: {
         type: Boolean,
         default: false
-      }
-    }
-  ],
-  school: [
-    {
-      school: {
+      },
+      description: {
         type: String
-      },
-      location: {
-        type: String
-      },
-      from: {
-        type: Date,
-        default: Date.now
-      },
-      to: {
-        type: Date
-      },
-      current: {
-        type: Boolean,
-        default: false
       }
     }
   ],
